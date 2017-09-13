@@ -22,15 +22,15 @@ art1.toggleClass("block");
 //art5.toggleClass("block");
 //art6.toggleClass("block");
 
-var art2 = $("#art2");
-var art3 = $("#art3");
-var art4 = $("#art4");
-var art5 = $("#art5");
-var art6 = $("#art6");
-var art7 = $("#art7");
-var art8 = $("#art8");
-var art9 = $("#art9");
-var art10 = $("#art10");
+//var art2 = $("#art2");
+//var art3 = $("#art3");
+//var art4 = $("#art4");
+//var art5 = $("#art5");
+//var art6 = $("#art6");
+//var art7 = $("#art7");
+//var art8 = $("#art8");
+//var art9 = $("#art9");
+//var art10 = $("#art10");
 
 
 /*
