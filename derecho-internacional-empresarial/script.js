@@ -202,6 +202,7 @@ $(document).ready(function () {
 
                     $("#art10").toggleClass("block");
                     $(".principal").show();
+                    resultado();
                 }
                 $(".diez").hide();
 
@@ -444,6 +445,12 @@ $(document).ready(function () {
     });
 
 });
+
+
+function evaluar(){
+    $(".modal-body").append('<h3>Tonto</h3>');
+
+}
 
 
 function resultado() {

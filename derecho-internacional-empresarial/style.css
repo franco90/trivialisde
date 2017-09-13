@@ -273,7 +273,7 @@ input[type="radio"]:checked + label span{
 	font-size:1em;
 	margin:0 auto;
 	box-shadow: 0 5px 25px rgba(0,0,0,.45);
-	display:none;
+	display:block;
 }
 
 .volver{
@@ -287,7 +287,7 @@ input[type="radio"]:checked + label span{
 	}
 
 /*Ventana modal*/
-
+/*
 .velo{
     background: rgba(0,0,0,.7);
     position: fixed;
@@ -299,7 +299,6 @@ input[type="radio"]:checked + label span{
 .modal{
     position: fixed;
     width: 360px;
-    /*height: 160px;*/
     background: rgba(255,255,255,.9);
     padding: 20px;
     top: 50%;
@@ -334,7 +333,6 @@ input[type="radio"]:checked + label span{
 }
 
 .modal iframe{
-	/*margin-top: 20px;*/
 	position:relative;
 	top: 10px;
 }
@@ -373,4 +371,4 @@ input[type="radio"]:checked + label span{
 }
 .btn:hover{
     text-decoration: underline;
-}
+}*/
