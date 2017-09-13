@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Abogacía ¿cuánto sabes de derecho?</title>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+    
+
+</head>
+
+<body>
+
+    <div id="entrada">
+        <img src="imgs/trivial.png" id="rueda" usemap="#Map">
+        <map name="Map" id="Map">
+    <area alt="" title="" class="area" onmouseover="mostrar('area1', true); vertipo('txt1', true );" onmouseout="mostrar('area1', false); vertipo('txt1', false );" onclick="jugar('btn1');" shape="poly" coords="376,112,305,98,306,52,395,72,471,123,442,155" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area2', true); vertipo('txt2', true );" onmouseout="mostrar('area2', false); vertipo('txt2', false );" onclick="jugar('btn2');" shape="poly" coords="488,226,447,160,477,131,529,206,549,301,503,301" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area3', true); vertipo('txt3', true );" onmouseout="mostrar('area3', false); vertipo('txt3', false );" onclick="jugar('btn3');" shape="poly" coords="486,383,504,311,548,308,527,405,476,475,446,443" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area4', true); vertipo('txt4', true );" onmouseout="mostrar('area4', false); vertipo('txt4', false );" onclick="jugar('btn4');" shape="poly" coords="371,492,439,451,469,482,407,527,307,547,302,503" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area5', true); vertipo('txt5', true );" onmouseout="mostrar('area5', false); vertipo('txt5', false );" onclick="jugar('btn5');" shape="poly" coords="220,488,296,506,294,552,202,531,130,484,161,447" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area6', true); vertipo('txt6', true );" onmouseout="mostrar('area6', false); vertipo('txt6', false );" onclick="jugar('btn6');" shape="poly" coords="112,375,152,444,124,477,75,402,52,308,96,310" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area7', true); vertipo('txt7', true );" onmouseout="mostrar('area7', false); vertipo('txt7', false );" onclick="jugar('btn7');" shape="poly" coords="114,221,98,301,49,302,72,206,121,133,153,162" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area8', true); vertipo('txt8', true );" onmouseout="mostrar('area8', false); vertipo('txt8', false );" onclick="jugar('btn8');" shape="poly" coords="226,112,157,155,127,124,197,75,297,54,298,97" />
+</map>
+
+        <img src="imgs/trivialL.png" id="ruedaL" usemap="#MapL" />
+        <map name="MapL" id="MapL">
+    <area alt="" title="" class="area" onmouseover="mostrar('area1', true); vertipo('txt1', true );" onmouseout="mostrar('area1', false); vertipo('txt1', false );" onclick="jugar1();" shape="poly" coords="311,95,255,83,254,43,334,62,392,103,368,128" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area2', true); vertipo('txt2', true );" onmouseout="mostrar('area2', false); vertipo('txt2', false );" onclick="jugar2();" shape="poly" coords="405,183,373,135,397,109,437,165,456,251,419,252" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area3', true); vertipo('txt3', true );" onmouseout="mostrar('area3', false); vertipo('txt3', false );" onclick="jugar3();" shape="poly" coords="403,320,416,258,458,258,437,339,397,394,371,370" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area4', true); vertipo('txt4', true );" onmouseout="mostrar('area4', false); vertipo('txt4', false );" onclick="jugar4();" shape="poly" coords="316,406,366,375,392,400,341,436,254,456,252,419" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area5', true); vertipo('txt5', true );" onmouseout="mostrar('area5', false); vertipo('txt5', false );" onclick="jugar5();" shape="poly" coords="178,404,245,419,247,457,172,441,109,399,131,373" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area6', true); vertipo('txt6', true );" onmouseout="mostrar('area6', false); vertipo('txt6', false );" onclick="jugar6();" shape="poly" coords="93,311,128,368,101,393,60,330,44,257,79,258" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area7', true); vertipo('txt7', true );" onmouseout="mostrar('area7', false); vertipo('txt7', false );" onclick="jugar7();" shape="poly" coords="93,187,83,248,41,250,59,172,101,110,128,136" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area8', true); vertipo('txt8', true );" onmouseout="mostrar('area8', false); vertipo('txt8', false );" onclick="jugar8();" shape="poly" coords="188,94,132,128,132,128,102,105,165,62,246,46,247,79,247,79" />
+</map>
+
+        <img src="imgs/trivialM.png" id="ruedaM" usemap="#MapM" />
+        <map name="MapM" id="MapM">
+    <area alt="" title="" class="area" onmouseover="mostrar('area1', true); vertipo('txt1', true );" onmouseout="mostrar('area1', false); vertipo('txt1', false );" onclick="jugar1();" shape="poly" coords="251,75,205,65,203,35,261,48,316,81,297,104" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area2', true); vertipo('txt2', true );" onmouseout="mostrar('area2', false); vertipo('txt2', false );" onclick="jugar2();" shape="poly" coords="328,150,300,108,320,88,351,133,368,202,336,204" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area3', true); vertipo('txt3', true );" onmouseout="mostrar('area3', false); vertipo('txt3', false );" onclick="jugar3();" shape="poly" coords="325,257,337,207,367,206,354,273,321,319,299,299" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area4', true); vertipo('txt4', true );" onmouseout="mostrar('area4', false); vertipo('txt4', false );" onclick="jugar4();" shape="poly" coords="255,328,295,302,314,323,269,353,203,369,203,340" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area5', true); vertipo('txt5', true );" onmouseout="mostrar('area5', false); vertipo('txt5', false );" onclick="jugar5();" shape="poly" coords="146,326,195,336,199,367,135,354,86,325,107,302" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area6', true); vertipo('txt6', true );" onmouseout="mostrar('area6', false); vertipo('txt6', false );" onclick="jugar6();" shape="poly" coords="73,251,103,297,81,320,54,277,35,207,64,207" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area7', true); vertipo('txt7', true );" onmouseout="mostrar('area7', false); vertipo('txt7', false );" onclick="jugar7();" shape="poly" coords="76,144,64,200,33,199,46,138,81,87,101,108" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area8', true); vertipo('txt8', true );" onmouseout="mostrar('area8', false); vertipo('txt8', false );" onclick="jugar8();" shape="poly" coords="150,75,107,104,81,84,81,84,132,51,199,33,198,66" />
+</map>
+
+        <img src="imgs/trivialS.png" id="ruedaS" usemap="#MapS" />
+        <map name="MapS" id="MapS">
+    <area alt="" title="" class="area" onmouseover="mostrar('area1', true); vertipo('txt1', true );" onmouseout="mostrar('area1', false); vertipo('txt1', false );" onclick="jugar1();" shape="poly" coords="189,57,152,49,151,28,193,34,234,63,221,78" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area2', true); vertipo('txt2', true );" onmouseout="mostrar('area2', false); vertipo('txt2', false );" onclick="jugar2();" shape="poly" coords="244,116,223,83,238,66,262,98,273,150,273,150,251,150" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area3', true); vertipo('txt3', true );" onmouseout="mostrar('area3', false); vertipo('txt3', false );" onclick="jugar3();" shape="poly" coords="240,195,251,155,273,155,262,201,238,237,238,237,222,222" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area4', true); vertipo('txt4', true );" onmouseout="mostrar('area4', false); vertipo('txt4', false );" onclick="jugar4();" shape="poly" coords="188,244,217,226,234,240,204,262,151,271,151,254" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area5', true); vertipo('txt5', true );" onmouseout="mostrar('area5', false); vertipo('txt5', false );" onclick="jugar5();" shape="poly" coords="107,242,147,252,147,273,97,262,67,240,80,224" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area6', true); vertipo('txt6', true );" onmouseout="mostrar('area6', false); vertipo('txt6', false );" onclick="jugar6();" shape="poly" coords="56,186,77,220,61,235,38,200,38,200,27,153,49,154" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area7', true); vertipo('txt7', true );" onmouseout="mostrar('area7', false); vertipo('txt7', false );" onclick="jugar7();" shape="poly" coords="57,109,57,109,49,149,27,149,36,101,60,66,76,81" />
+    <area alt="" title="" class="area" onmouseover="mostrar('area8', true); vertipo('txt8', true );" onmouseout="mostrar('area8', false); vertipo('txt8', false );" onclick="jugar8();" shape="poly" coords="113,56,78,77,78,77,66,63,101,36,147,27,147,27,148,48" />
+</map>
+        <div id="brillos">
+            <img id="area1" src="imgs/brillo.png" onclick="jugar1();">
+            <img id="area2" src="imgs/red.png" onclick="jugar2();">
+            <img id="area3" src="imgs/lila.png" onclick="jugar3();">
+            <img id="area4" src="imgs/purple.png" onclick="jugar4();">
+            <img id="area5" src="imgs/blue.png" onclick="jugar5();">
+            <img id="area6" src="imgs/green.png" onclick="jugar6();">
+            <img id="area7" src="imgs/lime.png" onclick="jugar7();">
+            <img id="area8" src="imgs/yellow.png" onclick="jugar8();">
+        </div>
+
+
+        <div id="dentro">
+            <img src="derecho-internacional-empresarial/imgs/QUESTIONSCIMA.png">
+            <h4>¿Cuánto sabes de derecho?</h4>
+            <p id="txt0">Escoge tu área y Acepta el reto.</p>
+            <div class="grupo-botones">
+                <div class="boton" id="txt1">Derecho Internacional y Empresarial</div>
+                <a class="boton" id="btn1" href="derecho-internacional-empresarial/index.html">Derecho Internacional y Empresarial</a>
+                <div class="boton" id="txt2">Derecho Financiero</div>
+                <a class="boton" id="btn2" href="http://www.marca.com/">Derecho Financiero</a>
+                <div class="boton" id="txt3">Derecho Tributario</div>
+                <a class="boton" id="btn3" href="http://www.isdemasters.com/test-derecho/">Derecho Tributario</a>
+                <div class="boton" id="txt4">Gestión y Derecho Deportivo</div>
+                <a class="boton" id="btn4" href="http://www.isdemasters.com/International_ISDE/">Gestión y Derecho Deportivo</a>
+                <div class="boton" id="txt5">Mediación</div>
+                <a class="boton" id="btn5" href="http://www.isdemasters.com/test-derecho/test-financiero-patrimonial">Mediación</a>
+                <div class="boton" id="txt6">Urbanismo</div>
+                <a class="boton" id="btn6" href="http://www.isdemasters.com/test-derecho/test-financiero-patrimonial">Urbanismo</a>
+                <div class="boton" id="txt7">Litigación</div>
+                <a class="boton" id="btn7" href="http://www.isdemasters.com/test-derecho/test-financiero-patrimonial">Litigación</a>
+                <div class="boton" id="txt8">Empresa MBA</div>
+                <a class="boton" id="btn8" href="http://www.isdemasters.com/test-derecho/test-financiero-patrimonial">Empresa MBA</a>
+            </div>
+        </div>
+
+
+    </div>
+    
+        <script type="text/javascript" src="js/js.js"></script>
+
+</body>
+
+</html>

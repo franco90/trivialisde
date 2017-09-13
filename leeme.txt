@@ -1,0 +1,43 @@
+Hola Antony,
+
+
+Te paso la carpeta con lo del trivial.
+ 
+Supongo que Álex te habrá puesto al tanto de lo que es etc…
+
+En la carpeta que te paso, hay varias subcarpetas:
+
+Los cuestionarios que tenía hasta el momento.
+
+Los editables de las imágenes de cada pregunta
+
+Y la carpeta test-derecho que es donde tengo los archivos del trivial como tal.
+
+Si abres el index de esa carpeta verás la pantalla inicial, que es una ruleta con los diferentes quesitos. Que te confirme Alex si al final son 8 categorías porque si no habrá que cambiarlo todo otra vez. Ojo, que las rutas no están actualizadas. Verás que te llevan a la web de isde casi todas.
+
+Para que te hagas una idea, es un proyecto que empezamos hace más de un año. Inicialmente estuvo Cristian con ello, pero en seguida me puse yo con ello. Lo hice con javascript porque es lo que controlo. Si tú consideras que es mejor hacerlo de otra manera adelante. Eso ya como tu veas y como andes de tiempo…
+
+Este es el listado de los tests que iban a aparecer la última vez que hablé con Alex sobre esto:
+
+    Derecho  Internacional  y Empresarial 
+    Financiero                  MAFP
+    Tributario        
+    Gestión y derecho Deportivo        
+    Mediación      
+    Urbanismo      
+    Litigación        
+    Empresa   MBA          
+
+Los verdes son los tests que acabé, el naranja naranja está empezado pero únicamente copié las preguntas y marqué las respuestas correctas, faltaría actualizar imágenes etc.
+
+De los otros no llegué a tener los cuestionarios, pero por lo que he visto en el mail de alex hay alguno nuevo como el de mediación.
+
+En un principio, el trivial era de ISDE así que en algunos verás que aparece el logo de ISDE. Luego la idea era que fuera de CIMA bajo el logo de CIMA QUESTIONS. Te paso el editable por si tienes que modificarlo o lo que sea.
+ 
+Las imágenes las he ido sacando de internet o haciéndolas yo misma.
+
+El tema de redes sociales habría que actualizarlo porque en su día funcionaba pero no se ha incluído el logo de CIMA QUestions y alguna cosa más.
+
+Échale un vistazo y si quieres me llamas y vamos concretando porque más o menos te he explicado todo pero seguro que de primeras te suena a chino. Mejor que revises y me llamas o me escribes y hablamos. Así lo vemos los dos más claro…es un poco complicado de explicar sobre todo porque hace meses que no lo toco y hay cosas que se me han podido olvidar. 
+
+Gracias!

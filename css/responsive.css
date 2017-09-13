@@ -1,0 +1,517 @@
+@charset "utf-8";
+/* CSS responsive */
+
+@media (min-width: 571px) and (max-width: 899px){
+	
+body{
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	}
+
+#entrada{
+	width:100%;
+	height:1000px;
+	position:relative;
+	top: 0;
+	left:0;
+	margin:0 auto;
+	background:#eee;
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	box-shadow: none;
+	text-align:center;
+}
+
+/*#rueda{
+	width:600px;
+	height:600px;
+	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:50;
+}*/
+
+#dentro{
+	width:600px;
+	margin:0 auto;
+	position:relative;
+	left:15px;
+	top:-1053px
+}
+
+
+#brillos{
+	width:600px;
+	height:600px;
+	margin: 0 auto;
+	position:relative;
+	top:-600px;
+	z-index:30;
+}
+
+.boton{
+	width:215px;
+	position:fixed;
+	margin:0 -107px;
+	top:600px;
+	left:50%;
+}
+
+div.boton{
+	height:0;
+	width:0;
+	padding:0;
+	overflow:hidden}
+	
+}
+
+@media (min-width: 471px) and (max-width: 570px){
+	
+body{
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	}
+
+#entrada{
+	max-width:100%;
+	height:1000px;
+	position:relative;
+	top: 0;
+	left:0;
+	margin:0 auto;
+	background:#eee;
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	box-shadow: none;
+	text-align:center;
+}
+
+#rueda , #Map{
+	display:none}
+
+#ruedaL , #MapL{
+	display:block;
+}
+
+
+#dentro{
+	width: 500px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: -880px;
+}
+
+
+#brillos{
+	width:500px;
+	height:500px;
+	margin: 0 auto;
+	position:relative;
+	top:-500px;
+	z-index:30;
+}
+
+
+#area1{
+	 width:177px;
+	 top:19px;
+	 left:225px;
+	 cursor:pointer;
+	 z-index:1;
+}
+
+#area2{
+	width:143px;
+	display:none;
+    position: absolute;
+    top: 91px;
+    left: 346px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area3{	
+	width:167px;
+	display:none;
+    position: absolute;
+    top: 221px;
+    left: 328px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area4{	
+	display:none;
+	width:205px;
+    position: absolute;
+    top: 355px;
+    left: 216px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area5{	
+	display:none;
+	width:200px;
+    position: absolute;
+    top: 349px;
+    left: 81px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area6{	
+	display:none;
+	width:154px;
+    position: absolute;
+    top: 225px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area7{	
+	display:none;
+	width:167px;
+    position: absolute;
+    top: 85px;
+    left: -9px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area8{	
+	display:none;
+	width:194px;
+    position: absolute;
+    top: 12px;
+    left: 78px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.boton{
+	width:215px;
+	position:fixed;
+	margin:0 -107px;
+	top:500px;
+	left:50%;
+}
+
+div.boton{
+	height:0;
+	width:0;
+	padding:0;
+	overflow:hidden}
+	
+}
+
+@media (min-width: 371px) and (max-width: 470px){
+	
+body{
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	}
+
+#entrada{
+	max-width:100%;
+	height:1000px;
+	position:relative;
+	top: 0;
+	left:0;
+	margin:0 auto;
+	background:#eee;
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	box-shadow: none;
+	text-align:center;
+}
+
+#rueda , #Map{
+	display:none}
+
+#ruedaL , #MapL{
+	display:none;
+}
+
+#ruedaM , #MapM{
+	display:block;
+}
+
+
+#dentro{
+	width: 400px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: -710px;
+	font-size:.9em;
+}
+
+#dentro img{
+	width:150px;
+	margin-bottom:10px;
+}
+
+#brillos{
+	width:400px;
+	height:400px;
+	margin: 0 auto;
+	position:relative;
+	top:-400px;
+	z-index:30;
+}
+
+
+#area1{
+	 width:142px;
+	 top:15px;
+	 left:180px;
+	 cursor:pointer;
+	 z-index:1;
+}
+
+#area2{
+	width:116px;
+	display:none;
+    position: absolute;
+    top: 73px;
+    left: 279px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area3{
+	width:133px;
+	display:none;
+    position: absolute;
+    top: 179px;
+    left: 264px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area4{
+	display:none;
+	width:157px;
+    position: absolute;
+    top: 290px;
+    left: 178px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area5{
+	display:none;
+	width:163px;
+    position: absolute;
+    top: 281px;
+    left: 63px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area6{
+	display:none;
+	width:126px;
+    position: absolute;
+    top: 179px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area7{
+	display:none;
+	width:135px;
+    position: absolute;
+    top: 67px;
+    left: -8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area8{
+	display:none;
+	width:158px;
+    position: absolute;
+    top: 9px;
+    left: 59px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.boton{
+	width:215px;
+	position:fixed;
+	margin:0 -107px;
+	top:500px;
+	left:50%;
+}
+
+div.boton{
+	height:0;
+	width:0;
+	padding:0;
+	overflow:hidden}
+	
+}
+
+@media (min-width: 10px) and (max-width: 370px){
+	
+body{
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	}
+
+#entrada{
+	max-width:100%;
+	height:1000px;
+	position:relative;
+	top: 0;
+	left:0;
+	margin:0 auto;
+	background:#eee;
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	box-shadow: none;
+	text-align:center;
+}
+
+#rueda , #Map{
+	display:none}
+
+#ruedaL , #MapL{
+	display:none;
+}
+
+#ruedaM , #MapM{
+	display:none;
+}
+
+#ruedaS , #MapS{
+	display:block;
+}
+
+#dentro{
+	width: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: -520px;
+	font-size:.7em;
+}
+
+#dentro img{
+	width:150px;
+	margin-bottom:0;
+}
+
+#brillos{
+	width:300px;
+	height:300px;
+	margin: 0 auto;
+	position:relative;
+	top:-300px;
+	z-index:30;
+}
+
+
+#area1{
+	 width:105px;
+	 top:12px;
+	 left:135px;
+	 cursor:pointer;
+	 z-index:1;
+}
+
+#area2{
+	width:83px;
+	display:none;
+    position: absolute;
+    top: 57px;
+    left: 209px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area3{
+	width:98px;
+	display:none;
+    position: absolute;
+    top: 133px;
+    left: 195px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area4{
+	display:none;
+	width:120px;
+    position: absolute;
+    top: 215px;
+    left: 129px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area5{
+	display:none;
+	width:115px;
+    position: absolute;
+    top: 212px;
+    left: 53px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+#area6{
+	display:none;
+	width:92px;
+    position: absolute;
+    top: 134px;
+    left: 2px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area7{
+	display:none;
+	width:100px;
+    position: absolute;
+    top: 50px;
+    left: -4px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area8{
+	display:none;
+	width:112px;
+    position: absolute;
+    top: 8px;
+    left: 51px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.boton{
+	width:215px;
+	position:fixed;
+	margin:0 -107px;
+	top:350px;
+	left:50%;
+}
+
+div.boton{
+	height:0;
+	width:0;
+	padding:0;
+	overflow:hidden}
+	
+}

@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	width:100%;
+	background:#E3F2FD;
+}
+
+#entrada{
+	width:900px;
+	height:600px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	margin:-300px -450px;
+	background:#eee;
+	background: #3D65A3;
+    background:linear-gradient(45deg,#0D2036, #131E47);
+	box-shadow: 0 0px 25px rgba(0,0,0,.45);
+	text-align:center;
+}
+
+#rueda{
+	width:600px;
+	height:600px;
+	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:50;
+}
+
+#ruedaL{
+	display:none;
+	width:500px;
+	height:500px;
+	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:50;
+}
+
+#MapL{
+	display:none;
+}
+
+#ruedaM{
+	display:none;
+	width:400px;
+	height:400px;
+	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:50;
+}
+
+#MapM{
+	display:none;
+}
+
+#ruedaS{
+	display:none;
+	width:300px;
+	height:300px;
+	margin: 0 auto;
+	text-align:center;
+	color:#fff;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:50;
+}
+
+#MapS{
+	display:none;
+}
+
+#brillos{
+	width:600px;
+	height:600px;
+	position:absolute;
+	margin:0 150px;
+	top:0;
+	left:0;
+}
+
+/*#porcion{
+	background:url(../imgs/porcion.png) no-repeat center;
+	width:150px;
+	height:150px;
+	position:relative;
+	top:58px;
+	left:368px;}
+	
+#porcion2{
+	background:url(../imgs/porcion.png) no-repeat center;
+	width:150px;
+	height:150px;
+	position:relative;
+	top:208px;
+	left:368px;}
+	
+#porcion3{
+	width:150px;
+	height:150px;
+	border-radius:0 100% 0 0;
+	background:teal;
+	}*/
+
+#dentro{
+	position:absolute;
+	top:120px;
+	left:32%;
+	color:#fff;
+	text-shadow:0 0 3px rgba(255,255,255,.8);
+}
+
+#dentro img{
+	margin-bottom:10px}
+
+ #area1{
+	 display:none;
+	 position:absolute;
+	 top:20px;
+	 left:265px;
+	 cursor:pointer;
+	 z-index:1;
+}
+
+
+#area2{
+	display:none;
+    position: absolute;
+    top: 109px;
+    left: 417px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area3{
+	display:none;
+    position: absolute;
+    top: 266px;
+    left: 395px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area4{
+	display:none;
+    position: absolute;
+    top: 429px;
+    left: 259px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area5{
+	display:none;
+    position: absolute;
+    top: 418px;
+    left: 93px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area6{
+	display:none;
+    position: absolute;
+    top: 267px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area7{
+	display:none;
+    position: absolute;
+    top: 97px;
+    left: -13px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#area8{
+	display:none;
+	position: absolute;
+    top: 12px;
+    left: 89px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.area{
+	cursor:pointer;}
+
+/*#txt1 , #txt2{
+	display:none;
+	position:absolute;
+	top:270px;
+	left:20px;
+}*/
+
+#btn1{
+	display:none;
+}
+
+.boton{
+	display:none;
+	background:linear-gradient(45deg,#fff, #bbb);
+	box-shadow: 0 0px 25px rgba(0,0,0,.45);
+	font-weight:700;
+	color:#131e47;
+	padding: 10px 5px;
+	border-radius:10px;
+	width:215px;
+	position:absolute;
+	top:270px;
+	left:53px;
+	text-decoration:none;
+	cursor:pointer;
+	z-index:99
+}
+
+
+
+	
+	
+	/*<img src="url/to/your/image.jpg" alt="" usemap="#Map" />*/
+
+	
+	
+	
+	
