@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content='Completa el test y averigua tus aptitudes para el mundo de la abogacía' />
     <meta http-equiv="description" content='Completa el test y averigua tus aptitudes para el mundo de la abogacía' />
     <!--metas facebook-->
@@ -15,18 +15,15 @@
     <meta property="og:site_name" content="difusisde.esy.es">
 
     <title>Test:Internacional y empresarial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,200,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="../css/test-style.css">
+    <link rel="stylesheet" href="../css/test-responsive.css">
+    <link rel="stylesheet" href="img-test.css">
 </head>
 
 <body>
@@ -34,30 +31,18 @@
     <div id="fb-root"></div>
     <div id="fb-root"></div>
     <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
 
-    </script>
-    <!--botón de Cristian-->
-    <!--<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.isdemasters.com/test-derecho/&name=Genial! Seré un gran abogado. He sacado 10/10 en el test de Derecho"><div style="width:80px; height:30px; background-color:red;">Compartir</div></a>-->
     <div id="content">
         <header>
             <div>
                 <div>
-                    <img src="imgs/QUESTIONSCIMA.png">
+                    <img src="../imgs/QUESTIONSCIMA.png">
                 </div>
             </div>
         </header>
 
         <div id="titulo">
-            <img src="imgs/QUESTIONSCIMA.png">
+            <img src="../imgs/QUESTIONSCIMA.png">
             <h1>¿Cuánto sabes de Derecho Internacional y Empresarial?</h1>
             <p id="intro">Completa el test y averigua si tu futuro está en este campo de la abogacía</p>
             <div id="comenzar" onClick="comenzar();">Comenzar</div>
@@ -247,8 +232,8 @@
                 <input type="button" class="boton principal" value="Ver Resultado" onclick="resultado();">
 
 
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" onclick="evaluar();" data-target="#myModal">Ver resultados</button>
-
+                <button type="button" id="modal-resultados" class="btn btn-info btn-lg" data-toggle="modal" onclick="evaluar();" data-target="#myModal">Ver resultados</button>
+                <!-- ventana modal con los resultados del test -->
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -261,21 +246,12 @@
 
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
-                <div class="text-center">
-
-                    <p>¡Deberías dedicarte profesionalmente al Derecho internacional y empresarial!</p>
-                </div>
-                <strong>Nota:</strong> media
-                <p><a href="#">+ info MÁSTER EN DERECHO INTERNACIONAL Y EMPRESARIAL</a></p>
-                
-
 
                 <a href="http://difusisde.esy.es/" class="boton volver"> volver al trivial</a>
             </form>
@@ -285,7 +261,7 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="test-script.js"></script>
 </body>
 
 </html>

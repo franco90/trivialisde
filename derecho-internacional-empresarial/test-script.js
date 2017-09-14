@@ -1,192 +1,14 @@
-//function comenzar(){
-//	
-//	document.getElementsByTagName("header")[0].style.top="0";
-//	document.getElementById("titulo").style.top="0";
-//	document.getElementById("titulo").style.paddingBottom="0";
-//	document.getElementById("titulo").style.borderRadius="5px 5px 0 0";
-//	document.getElementsByTagName("main")[0].style.display="block";
-//	document.getElementById("intro").style.display="none";
-//	document.getElementById("comenzar").style.display="none";
-//	document.getElementsByTagName("h1")[0].style.height="250px";
-//	document.getElementsByTagName("h1")[0].style.lineHeight="250px";
-//		}
+
+
+/* Ocultamos todas las section que hay, es decir, todas las preguntas e inmediatamente después mostramos la pregunta 1 */
 $("section").hide();
 $("#p-1").show();
 var art1 = $("#art1");
 art1.toggleClass("block");
-//
-//
-//art3.toggleClass("block");
-//art2.toggleClass("block");
-//art4.toggleClass("block");
-//art5.toggleClass("block");
-//art6.toggleClass("block");
-
-//var art2 = $("#art2");
-//var art3 = $("#art3");
-//var art4 = $("#art4");
-//var art5 = $("#art5");
-//var art6 = $("#art6");
-//var art7 = $("#art7");
-//var art8 = $("#art8");
-//var art9 = $("#art9");
-//var art10 = $("#art10");
 
 
-/*
-function preg1() {
-    art1.toggleClass("block");
-    art2.removeClass("block");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("block");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("block");
-    art10.removeClass("block");
-}
-    function preg1() {
-    art1.toggleClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
+var puntos = [0,0,0,0,0,0,0,0,0,0]; //array para acumular el puntaje obtenido
 
-function preg2() {
-    art2.toggleClass("blockA");
-    art1.removeClass("block");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg3() {
-    art3.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg4() {
-    art4.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-
-}
-
-function preg5() {
-    art5.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg6() {
-    art6.toggleClass("blockA");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg7() {
-    art7.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg8() {
-    art8.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art9.removeClass("blockB");
-    art10.removeClass("block");
-}
-
-function preg9() {
-    art9.toggleClass("blockB");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art10.removeClass("block");
-}
-
-function preg10() {
-    art10.toggleClass("block");
-    art1.removeClass("block");
-    art2.removeClass("blockA");
-    art3.removeClass("block");
-    art4.removeClass("block");
-    art5.removeClass("block");
-    art6.removeClass("blockA");
-    art7.removeClass("block");
-    art8.removeClass("block");
-    art9.removeClass("blockB");
-}
-*/
-var uno = 0;
-var dos = 0;
-var tres = 0;
-var cuatro = 0;
-var cinco = 0;
-var seis = 0;
-var siete = 0;
-var ocho = 0;
-var nueve = 0;
-var diez = 0;
 
 $(document).ready(function () {
     $(".boton").click(function () {
@@ -196,23 +18,25 @@ $(document).ready(function () {
         }, function (mensaje) {
 
             if ($("#form10 input[name='preg10']:radio").is(':checked')) {
-
+                
                 $("#form10 input[name='preg10']:radio").attr('disabled', true);
                 if ($(".diez").is(":visible")) {
 
                     $("#art10").toggleClass("block");
                     $(".principal").show();
-                    resultado();
+                    
                 }
                 $(".diez").hide();
 
 
                 if ($('input:radio[name=preg10]:checked').val() === mensaje) {
                     $("#diez").addClass("right");
-                    diez = 1;
+                    puntos[9] = 1;
+                    
                 } else {
                     $("#diez").addClass("wrong");
                 }
+               $("#modal-resultados").click();
             }
 
         });
@@ -234,7 +58,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg9]:checked').val() === mensaje) {
                     $("#nueve").addClass("right");
-                    nueve = 1;
+                    puntos[8] = 1;
                 } else {
                     $("#nueve").addClass("wrong");
                 }
@@ -259,7 +83,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg8]:checked').val() === mensaje) {
                     $("#ocho").addClass("right");
-                    ocho = 1;
+                    puntos[7] = 1;
                 } else {
                     $("#ocho").addClass("wrong");
                 }
@@ -284,7 +108,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg7]:checked').val() === mensaje) {
                     $("#siete").addClass("right");
-                    siete = 1;
+                    puntos[6] = 1;
                 } else {
                     $("#siete").addClass("wrong");
                 }
@@ -311,7 +135,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg6]:checked').val() === mensaje) {
                     $("#seis").addClass("right");
-                    seis = 1;
+                    puntos[5] = 1;
                 } else {
                     $("#seis").addClass("wrong");
                 }
@@ -337,7 +161,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg5]:checked').val() === mensaje) {
                     $("#cinco").addClass("right");
-                    cinco = 1;
+                    puntos[4] = 1;
                 } else {
                     $("#cinco").addClass("wrong");
                 }
@@ -360,7 +184,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg4]:checked').val() === mensaje) {
                     $("#cuatro").addClass("right");
-                    cuatro = 1;
+                    puntos[3] = 1;
                 } else {
                     $("#cuatro").addClass("wrong");
                 }
@@ -383,7 +207,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg3]:checked').val() === mensaje) {
                     $("#tres").addClass("right");
-                    tres = 1;
+                    puntos[2] = 1;
                 } else {
                     $("#tres").addClass("wrong");
                 }
@@ -406,7 +230,7 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg2]:checked').val() === mensaje) {
                     $("#dos").addClass("right");
-                    dos = 1;
+                    puntos[1] = 1;
                 } else {
                     $("#dos").addClass("wrong");
                 }
@@ -432,27 +256,30 @@ $(document).ready(function () {
 
                 if ($('input:radio[name=preg1]:checked').val() === mensaje) {
                     $("#uno").addClass("right");
-                    uno = 1;
+                    puntos[0] = 1;
                 } else {
                     $("#uno").addClass("wrong");
                 }
             }
         });
 
-        //resultado();  
-
-
     });
 
 });
 
 
-function evaluar(){
-    $(".modal-body").append('<h3>Tonto</h3>');
+function evaluar() {
+    var URLactual = window.location;
+    var suma = puntos.reduce((a, b) => a + b, 0);
+    var media = ((suma * 10) / 10).toFixed(1);
+
+    $(".modal-body").html(
+        '<div class="text-center"><h3>¡Deberías dedicarte profesionalmente al Derecho internacional y empresarial!</h3></div><p><strong>Nota:</strong> '+ media +'</p><p>+ info <a href="#">MÁSTER EN DERECHO INTERNACIONAL Y EMPRESARIAL</a></p><div id="share-buttons"><hr><div class="text-center"><p>Comparte y reta a tus amigos</p><a href="http://www.facebook.com/sharer.php?u='+URLactual+'" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a><a href="https://plus.google.com/share?url='+URLactual+'" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url='+URLactual+'" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a><a href="javascript:void((function()%7Bvar%20e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("charset","UTF-8");e.setAttribute("src","http://assets.pinterest.com/js/pinmarklet.js?r="+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a><a href="https://twitter.com/share?url='+URLactual+'" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></div></div>'
+    );
 
 }
 
-
+/*
 function resultado() {
 
     if (($("#form1 input[name='preg1']:radio").is(':checked')) && ($("#form2 input[name='preg2']:radio").is(':checked')) && ($("#form3 input[name='preg3']:radio").is(':checked')) && ($("#form4 input[name='preg4']:radio").is(':checked')) && ($("#form5 input[name='preg5']:radio").is(':checked')) && ($("#form6 input[name='preg6']:radio").is(':checked')) && ($("#form7 input[name='preg7']:radio").is(':checked')) && ($("#form8 input[name='preg8']:radio").is(':checked')) && ($("#form9 input[name='preg9']:radio").is(':checked')) && ($("#form10 input[name='preg10']:radio").is(':checked'))) {
@@ -501,40 +328,4 @@ function resultado() {
             $(".modal").remove();
         });
     }
-}
-(function ($) {
-
-    /**
-     * jQuery function to prevent default anchor event and take the href * and the title to make a share pupup
-     *
-     * @param  {[object]} e           [Mouse event]
-     * @param  {[integer]} intWidth   [Popup width defalut 500]
-     * @param  {[integer]} intHeight  [Popup height defalut 400]
-     * @param  {[boolean]} blnResize  [Is popup resizeabel default true]
-     */
-    $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
-
-        // Prevent default anchor event
-        e.preventDefault();
-
-        // Set values for window
-        intWidth = intWidth || '500';
-        intHeight = intHeight || '400';
-        strResize = (blnResize ? 'yes' : 'no');
-
-        // Set title and open popup with focus on it
-        var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
-            strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,
-            objWindow = window.open(this.attr('href'), strTitle, strParam).focus();
-    }
-
-    /* ================================================== */
-
-    $(document).ready(function ($) {
-        $('.customer.share').on("click", function (e) {
-            $(this).customerPopup(e);
-        });
-    });
-
-
-}(jQuery));
+}*/
