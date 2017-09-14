@@ -1,0 +1,41 @@
+/* imágenes de cada pregunta del test */
+
+.img1 {
+    background: url(imgs/1.jpg) no-repeat center
+}
+
+.img2 {
+    background: url(imgs/2.jpg) no-repeat center
+}
+
+.img3 {
+    background: url(imgs/3.jpg) no-repeat center
+}
+
+.img4 {
+    background: url(imgs/4.jpg) no-repeat center
+}
+
+.img5 {
+    background: url(imgs/5.jpg) no-repeat center
+}
+
+.img6 {
+    background: url(imgs/6.jpg) no-repeat center
+}
+
+.img7 {
+    background: url(imgs/7.jpg) no-repeat center
+}
+
+.img8 {
+    background: url(imgs/8.jpg) no-repeat center
+}
+
+.img9 {
+    background: url(imgs/9.jpg) no-repeat center
+}
+
+.img10 {
+    background: url(imgs/10.jpg) no-repeat center
+}
