@@ -9,6 +9,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+	margin: 0;
+}
+
 body {
     width: 100%;
     background: #E3F2FD;
