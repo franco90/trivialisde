@@ -9,6 +9,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+	margin: 0;
+}
+
 body {
     width: 100%;
     background: #E3F2FD;
@@ -65,13 +69,11 @@ main {
     display: block;
     padding-bottom: 50px;
 }
-
-
 /*********************************************/
 
 #titulo {
     width: 100%;
-    background: #eee;
+    /*background: #eee;*/
     background: #3D65A3;
     background: linear-gradient(45deg, #3D65A3, #1565c0);
     position: relative;
@@ -79,19 +81,22 @@ main {
     box-shadow: 0 0px 25px rgba(0, 0, 0, .45);
     padding-bottom: 0;
     transition: all .5s linear;
-    border-radius: 5px 5px 0 0;
+    /*border-radius: 5px 5px 0 0;*/
     overflow: hidden;
 }
 
 #titulo img {
-    display: none;
+    /*display: none;*/
+   width: 30%;
+   padding: 30px;
 }
 
 h1 {
-    height: 250px;
+    height: auto;
     text-align: right;
-    padding-right: 50px;
-    padding-top: 75px;
+    padding: 30px;
+    /*padding-right: 50px;
+    padding-top: 75px;*/
     font-weight: 300;
     color: #fff;
     transition: all .5s linear;
@@ -135,6 +140,7 @@ h1 {
 }
 
 section {
+	padding: 30px;
     background: #ECEFF1;
     background: linear-gradient(135deg, #ECEFF1, #E3F2FD);
     box-shadow: 0 5px 25px rgba(0, 0, 0, .45);
@@ -145,7 +151,7 @@ h2 {
     font-weight: 400;
     padding: 15px;
     font-size: 1.2em;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 article {
@@ -156,10 +162,11 @@ article {
 }
 
 .opciones {
-    width: 50%;
+	display: table-cell;
+    /*width: 50%;*/
     float: left;
-    padding-top: 30px;
-    padding: 10px 10px 0 15px;
+    /*padding-top: 30px;*/
+    padding: 0px 10px 0 15px;
 }
 
 input[type="radio"] {
@@ -179,9 +186,10 @@ label {
 }
 
 .imagen {
+	display: table-cell;
     width: 45%;
-    float: left;
-    height: 300px;
+    /*float: left;*/
+    height: auto;
     margin-right: 5%;
     border-radius: 5px;
 }
@@ -189,14 +197,15 @@ label {
 .block,
 .blockA,
 .blockB {
-    display: block;
-    height: 430px;
+    display: table;
+    height: auto;
     /*padding-bottom:50px;*/
     transition: all .5s ease-in;
+    padding: 15px 0px 15px 0px;
 }
 
 label span {
-    display: inline-block;
+    display: none;
     position: relative;
     margin-right: 5px;
     padding: 0;
@@ -265,4 +274,26 @@ input[type="radio"]:checked+label span {
     border: 0;
     box-shadow: 0;
     display: inline;
+}
+
+/*Added by Alfonso*/
+
+.btn-lg  {
+	width:100%;
+	border-radius: 0;
+}
+section h2 {
+	font-size: 1.5em;
+}
+.label-preg {
+	padding: 15px 15px 0px 15px;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+	cursor: pointer;
+} 
+.label-preg:hover {
+	background-color: #ffffcd;
+}
+label {
+	font-size: 1em;
 }
