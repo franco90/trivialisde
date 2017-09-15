@@ -19,13 +19,13 @@
         width: 80%;
     }
     .block {
-        height: 350px;
+        height: auto;
     }
     .blockA {
-        height: 410px;
+        height: auto;
     }
     .blockB {
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -50,17 +50,17 @@
         display: block;
         float: left;
         width: 180px;
-        margin: 10px 0 30px 5%;
+        /*margin: 10px 0 30px 5%;*/
     }
     h1 {
-        width: 250px;
+        /*width: 250px;
         float: right;
         height: 100px;
         text-align: right;
         padding-right: 0;
         padding-top: 45px;
-        margin-right: 5%;
-        font-size: 1.1em;
+        margin-right: 5%;*/
+        font-size: 2em;
     }
     h2 {
         font-size: 1em;
@@ -69,13 +69,13 @@
         line-height: 21px;
     }
     .block {
-        height: 310px;
+        height: auto;
     }
     .blockA {
-        height: 340px;
+        height: auto;
     }
     .blockB {
-        height: 400px;
+        height: auto;
     }
     #comenzar {
         margin: 155px auto;
@@ -106,14 +106,14 @@
         margin: 30px 0 30px 5%;
     }
     h1 {
-        width: 215px;
+        /*width: 215px;
         float: right;
         height: 100px;
         text-align: right;
         padding-right: 0;
         padding-top: 74px;
-        margin-right: 5%;
-        font-size: 1em;
+        margin-right: 5%;*/
+        font-size: 2em;
     }
     h2 {
         font-size: .9em;
@@ -122,13 +122,13 @@
         line-height: 21px;
     }
     .block {
-        height: 370px;
+        height: auto;
     }
     .blockA {
-        height: 390px;
+        height: auto;
     }
     .blockB {
-        height: 470px;
+        height: auto;
     }
     #comenzar {
         margin: 155px auto;
@@ -159,14 +159,14 @@
         margin: 30px 0 30px 5%;
     }
     h1 {
-        width: 205px;
+        /*width: 205px;
         float: right;
         height: 100px;
         text-align: right;
         padding-right: 0;
         padding-top: 70px;
-        margin-right: 5%;
-        font-size: .9em;
+        margin-right: 5%;*/
+        font-size: 2em;
     }
     h2 {
         font-size: .9em;
@@ -175,13 +175,13 @@
         line-height: 21px;
     }
     .block {
-        height: 370px;
+        height: auto;
     }
     .blockA {
-        height: 400px;
+        height: auto;
     }
     .blockB {
-        height: 500px;
+        height: auto;
     }
     #comenzar {
         margin: 155px auto;
@@ -212,21 +212,20 @@
         margin: 30px 0 30px 5%;
     }
     h1 {
-        width: 180px;
+        /*width: 180px;
         float: right;
         height: 100px;
         text-align: right;
         padding-right: 0;
         padding-top: 55px;
-        margin-right: 5%;
-        font-size: .7em;
+        margin-right: 5%;*/
+        font-size: 2em;
     }
     h2 {
         font-size: .8em;
         padding: 10px;
     }
     /*
-
 .modal{
     width: 280px;
     margin: -80px 0 0 -140px;
@@ -240,15 +239,42 @@
         line-height: 21px;
     }
     .block {
-        height: 370px;
+        height: auto;
     }
     .blockA {
-        height: 450px;
+        height: auto;
     }
     .blockB {
-        height: 600px;
+        height: auto;
     }
     #comenzar {
         margin: 155px auto;
+    }
+}
+
+@media (max-width: 550px) {
+	#titulo img {
+	width: 120px !important;
+	margin: 0 !important;
+	}
+	h1 {
+		font-size: 1.4em;
+	}
+	#titulo {
+		padding: 20px 0 20px 0;
+	}	 
+} 
+@media (max-width: 415px) {
+   .block {
+    	padding: 0;
+    }
+    form {
+    margin: 20px 20px 20px 20px;
+    }
+    #modal-resultados.btn-lg {
+    margin-left: 0;
+    }
+    .volver.boton {
+    margin-left: 20px;
     }
 }
