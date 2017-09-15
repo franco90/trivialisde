@@ -1,29 +1,28 @@
 /* inicialización de variables: Nombre del Curso, preguntas... */
-var titulo = "Derecho Internacional y Empresarial";
-var preguntas = new Array(10);
+var titulo_programa = "Derecho Internacional y Empresarial";
+var nombre_master = "MÁSTER EN DERECHO INTERNACIONAL Y EMPRESARIAL";
+var link_master = "http://www.isdemasters.com";
+var mensaje1 = "¡Deberías dedicarte profesionalmente al " + titulo_programa;
+var mensaje2 = "¡Tienes aptitudes! ¿Has pensado dedicarte profesionalmente al " + titulo_programa + "?";
+var mensaje3 = "Con la formación adecuada podrías llegar a ser un experto en " + titulo_programa;
+var mensaje4 = "No está mal...Te recomendamos reforzar tu formación en " + titulo_programa;
+var mensaje5 = "Esta no es tu especialidad";
 
-for (i = 0; i < preguntas.length; i++) {
-    preguntas[i] = new Array(4);
+$("#titulo h1").append("Cuánto sabes de " + titulo_programa);
+//var preguntas = new Array(10);
+
+//for (i = 0; i < preguntas.length; i++) {
+//    preguntas[i] = new Array(4);
+//}
+
+
+
+function anadir(i,p,r1,r2,r3){    
+    $("#p-"+i+" h2").append(p);
+    $(".preg"+i+"_1").append(r1);
+    $(".preg"+i+"_2").append(r2);
+    $(".preg"+i+"_3").append(r3);
 }
-
-
-
-/* 
-[0][0] = Pregunta
-[0][1] = Alternativa a)
-[0][2] = Alternativa b)
-[0][3] = Alternativa c)
-*/
-preguntas[0][0] = "1) ¿En qué consiste la llamada cláusula general de deslealtad sobre la que pivota el sistema de competencia desleal?";
-preguntas[0][1] = "Consiste en una actuación contraria a las exigencias objetivas de la buena fe. Se actúa en contra de la buena fe cuando se infringe el principio de competencia por eficiencia."
-preguntas[0][2] = "Consiste en una actuación contraria a la buena fe en sentido subjetivo, requiriéndose una intención de actuar deslealmente, falseando la competencia en el mercado."
-preguntas[0][3] = "La cláusula general de deslealtad conlleva una obligación de obrar conforme a las buenas prácticas de los comerciantes."
-
-
-$("#uno").append(preguntas[0][0]);
-$(".preg1_1").append(preguntas[0][1]);
-$(".preg1_2").append(preguntas[0][2]);
-$(".preg1_3").append(preguntas[0][3]);
 
 
 
@@ -33,12 +32,10 @@ $("#p-1").show();
 var art1 = $("#art1");
 art1.toggleClass("block");
 
-
 var puntos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //array para acumular el puntaje obtenido
 
-
 $(document).ready(function () {
-    $("label").click(function () {
+    $(".label-preg").click(function () {
 
         $.get("buscar.php", {
             b: "pregunta_diez"
@@ -63,11 +60,11 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg10]:checked').val() === mensaje) {
-                    $("#diez").addClass("right");
+                    $("#p-10 h2").addClass("right");
                     puntos[9] = 1;
 
                 } else {
-                    $("#diez").addClass("wrong");
+                    $("#p-10 h2").addClass("wrong");
                 }
                 $("#modal-resultados").click();
             }
@@ -91,10 +88,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg9]:checked').val() === mensaje) {
-                    $("#nueve").addClass("right");
+                    $("#p-9 h2").addClass("right");
                     puntos[8] = 1;
                 } else {
-                    $("#nueve").addClass("wrong");
+                    $("#p-9 h2").addClass("wrong");
                 }
             }
 
@@ -116,10 +113,10 @@ $(document).ready(function () {
                 $("#form8 input[name='preg8']:radio").attr('disabled', true);
 
                 if ($('input:radio[name=preg8]:checked').val() === mensaje) {
-                    $("#ocho").addClass("right");
+                    $("#p-8 h2").addClass("right");
                     puntos[7] = 1;
                 } else {
-                    $("#ocho").addClass("wrong");
+                    $("#p-8 h2").addClass("wrong");
                 }
             }
 
@@ -143,16 +140,14 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg7]:checked').val() === mensaje) {
-                    $("#siete").addClass("right");
+                    $("#p-7 h2").addClass("right");
                     puntos[6] = 1;
                 } else {
-                    $("#siete").addClass("wrong");
+                    $("#p-7 h2").addClass("wrong");
                 }
             }
 
         });
-
-
 
         $.get("buscar.php", {
             b: "pregunta_seis"
@@ -173,10 +168,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg6]:checked').val() === mensaje) {
-                    $("#seis").addClass("right");
+                    $("#p-6 h2").addClass("right");
                     puntos[5] = 1;
                 } else {
-                    $("#seis").addClass("wrong");
+                    $("#p-6 h2").addClass("wrong");
                 }
             }
         });
@@ -202,10 +197,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg5]:checked').val() === mensaje) {
-                    $("#cinco").addClass("right");
+                    $("#p-5 h2").addClass("right");
                     puntos[4] = 1;
                 } else {
-                    $("#cinco").addClass("wrong");
+                    $("#p-5 h2").addClass("wrong");
                 }
             }
         });
@@ -228,10 +223,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg4]:checked').val() === mensaje) {
-                    $("#cuatro").addClass("right");
+                    $("#p-4 h2").addClass("right");
                     puntos[3] = 1;
                 } else {
-                    $("#cuatro").addClass("wrong");
+                    $("#p-4 h2").addClass("wrong");
                 }
             }
         });
@@ -256,10 +251,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg3]:checked').val() === mensaje) {
-                    $("#tres").addClass("right");
+                    $("#p-3 h2").addClass("right");
                     puntos[2] = 1;
                 } else {
-                    $("#tres").addClass("wrong");
+                    $("#p-3 h2").addClass("wrong");
                 }
             }
         });
@@ -268,7 +263,6 @@ $(document).ready(function () {
             b: "pregunta_dos"
         }, function (mensaje) {
             if ($("#form2 input[name='preg2']:radio").is(':checked')) {
-
 
                 var attr = $("#form2 input[name='preg2']:radio").attr('disabled');
                 
@@ -283,10 +277,10 @@ $(document).ready(function () {
 
 
                 if ($('input:radio[name=preg2]:checked').val() === mensaje) {
-                    $("#dos").addClass("right");
+                    $("#p-2 h2").addClass("right");
                     puntos[1] = 1;
                 } else {
-                    $("#dos").addClass("wrong");
+                    $("#p-2 h2").addClass("wrong");
                 }
             }
         });
@@ -295,14 +289,11 @@ $(document).ready(function () {
             b: "pregunta_uno"
         }, function (mensaje) {
 
-
             if ($("#form1 input[name='preg1']:radio").is(':checked')) {
                 
                 var attr = $("#form1 input[name='preg1']:radio").attr('disabled');
                 
                 if (typeof attr == typeof undefined) {
-                    
-//                if (($("#form1 input[name='preg1']:radio").disabled) == "undefined") {
                     $("#art1").toggleClass("block");
                     $("#p-2").show();
                     $("#art2").toggleClass("block");
@@ -310,12 +301,11 @@ $(document).ready(function () {
 
                 $("#form1 input[name='preg1']:radio").attr('disabled', true);
 
-
                 if ($('input:radio[name=preg1]:checked').val() === mensaje) {
-                    $("#uno").addClass("right");
+                    $("#p-1 h2").addClass("right");
                     puntos[0] = 1;
                 } else {
-                    $("#uno").addClass("wrong");
+                    $("#p-1 h2").addClass("wrong");
                 }
             }
         });
@@ -330,8 +320,21 @@ function evaluar() {
     var suma = puntos.reduce((a, b) => a + b, 0);
     var media = ((suma * 10) / 10).toFixed(1);
 
+//    if(suma === 10){
+//        
+//    }
+//    else if (suma < 10 && suma >= 7) {
+//    }
+//    else if (suma < 7 && suma >= 5) {
+//    }
+//    else if (suma < 5 && suma >= 3) {
+//    }
+//    else if (suma < 3) {
+//    }
+    
+    
     $(".modal-body").html(
-        '<div class="text-center"><h3>¡Deberías dedicarte profesionalmente al Derecho internacional y empresarial!</h3></div><p><strong>Nota:</strong> ' + media + '</p><p>+ info <a href="#">MÁSTER EN DERECHO INTERNACIONAL Y EMPRESARIAL</a></p><div id="share-buttons"><hr><div class="text-center"><p>Comparte y reta a tus amigos</p><a href="http://www.facebook.com/sharer.php?u=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a><a href="https://plus.google.com/share?url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a><a href="javascript:void((function()%7Bvar%20e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("charset","UTF-8");e.setAttribute("src","http://assets.pinterest.com/js/pinmarklet.js?r="+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a><a href="https://twitter.com/share?url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></div></div>'
+        '<div class="text-center"><h3>'+ mensaje1 +'</h3></div><p><strong>Nota:</strong> ' + media + '</p><p>+ info <a href="' + link_master + '">' + nombre_master + '</a></p><div id="share-buttons"><hr><div class="text-center"><p>Comparte y reta a tus amigos</p><a href="http://www.facebook.com/sharer.php?u=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a><a href="https://plus.google.com/share?url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a><a href="javascript:void((function()%7Bvar%20e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("charset","UTF-8");e.setAttribute("src","http://assets.pinterest.com/js/pinmarklet.js?r="+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a><a href="https://twitter.com/share?url=' + URLactual + '" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a></div></div>'
     );
 
 }
@@ -386,3 +389,74 @@ function resultado() {
         });
     }
 }*/
+
+
+
+var centesimas = 100;
+var segundos = 60;
+var minutos = 4;
+var horas = 0;
+function inicio() {
+	control = setInterval(cronometro,10);
+}
+function parar() {
+	clearInterval(control);
+}
+function reinicio() {
+	clearInterval(control);
+	centesimas = 0;
+	segundos = 0;
+	minutos = 0;
+	horas = 0;
+	Centesimas.innerHTML = ":00";
+	Segundos.innerHTML = ":00";
+	Minutos.innerHTML = ":00";
+	Horas.innerHTML = "00";
+
+}
+function cronometro() {
+	if (centesimas < 100) {
+		centesimas--;
+		if (centesimas < 10) { 
+            centesimas = "0"+centesimas 
+        }
+		Centesimas.innerHTML = ":"+centesimas;
+	}
+	if (centesimas == 100) {
+        minutos--;
+		centesimas = 99;
+	}
+	if (centesimas == 0) {
+        centesimas = 99;
+		segundos --;
+		if (segundos < 10) { 
+            segundos = "0"+segundos 
+        }
+		Segundos.innerHTML = ":"+segundos;
+	}
+	if (segundos == 0) {
+        segundos = 60; 
+                minutos--;
+		if (minutos < 10) {
+            minutos = "0"+minutos 
+        }
+		Minutos.innerHTML = ":"+minutos;  
+        
+	}
+//    if(segundos == 60){
+//
+//    }
+//	if ( (centesimas == 0)&&(segundos == 0) ) {
+//		minutos--;
+//		if (minutos < 10) { minutos = "0"+minutos }
+//		Minutos.innerHTML = ":"+minutos;
+//	}
+//	if (minutos == 59) {
+//		minutos = -1;
+//	}
+//	if ( (centesimas == 0)&&(segundos == 0)&&(minutos == 0) ) {
+//		horas ++;
+//		if (horas < 10) { horas = "0"+horas }
+//		Horas.innerHTML = horas;
+//	}
+}
